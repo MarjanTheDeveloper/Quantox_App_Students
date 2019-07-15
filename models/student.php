@@ -71,6 +71,8 @@
 			$req->execute(array('id' => $id));
 			$student = $req -> fetch();
 
+
+
 			return new Student(
 								$student['student_id'], 
 								$student['student_name'], 
