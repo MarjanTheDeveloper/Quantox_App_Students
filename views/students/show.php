@@ -30,7 +30,13 @@
 			      <th scope="row">Average:</th>
 			      <td><?php echo $average; ?></td>
 			    </tr>
-			    <tr class="bg-primary text-white">
+			    <tr class="<?php
+			    				if($pass == 'Pass.'){
+			    					echo 'bg-success';
+			    				} else {
+			    					echo 'bg-danger';
+			    				}
+			    		   ?> text-white">
 			      <th scope="row " colspan="2"><?php echo $pass; ?></th>
 			    </tr>
 			  </tbody>
