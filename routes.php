@@ -9,7 +9,7 @@
 				$controller = new PagesController();
 				break;
 			case 'students':
-				//treba nam model da query-ujemo database kasnije u controller-u
+				//treba nam model da query-ujemo bazu kasnije u controller-u
 				require_once('models/student.php');
 				$controller = new StudentsController();
 				break;
@@ -27,7 +27,7 @@
 		'students' => ['index', 'show']
 	);
 
-	//proveravamo zahtevan controller i action su obe allowed
+	//proveravamo da li su zahtevani controller i action "dozvoljeni"
 	//ako neko proba da pristupi necemu drugom redirektovacemo ga ka error action
 	if (array_key_exists($controller, $controllers)) {
 		if (in_array($action, $controllers[$controller])) {
