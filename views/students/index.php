@@ -7,7 +7,7 @@
 			<?php foreach($students as $student) { ?>
 				<div class="p-2 bg-primary mb-1">
 				<p>
-					<a href="?controller=students&action=show&student_id=<?php echo $student->student_id;?>" class="text-white">
+					<a href="http://localhost/QUANTOX_App_Students/home/students/show/<?php echo $student->student_id;?>" class="text-white">
 						<?php echo $student->student_name . ' ' . $student->student_lastname . ' Grades'; ?>
 					</a>
 				</p>
