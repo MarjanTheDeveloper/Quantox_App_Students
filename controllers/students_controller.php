@@ -15,10 +15,30 @@
 			switch ($student->school_board) {
 				case 'CSM':
 					$pass = self::csm($average);
+
+					$format_desc = 'JSON Format';
+
+					$format = '<textarea style="border:none; width:100%; height:50px;">'.json_encode($student).'</textarea>';
 					break;
 				
 				case 'CSMB':
 					$pass = self::csmb($student->mathematics,$student->english,$student->programing,$student->art);
+
+					$format_desc = 'XML Format';
+
+					$format = '<textarea style="border:none; width:100%; height:500px;">
+								<?xml version="1.0" encoding="utf-8"?>
+								<students>
+								    <student>
+										<student_id>'.$student->student_id.'</student_id>
+										<student_name>'.$student->student_name.'</student_name>
+										<mathematics>'.$student->mathematics.'</mathematics>
+										<english>'.$student->english.'</english>
+										<programing>'.$student->programing.'</programing>
+										<art>'.$student->art.'</art>
+									</student>
+								</students>
+								</textarea>';
 					break;
 			}
 

@@ -39,4 +39,12 @@
 			
 		</div>
 	</div>
+	<div class="row mt-4">
+		<div class="col-lg-11 mx-auto">
+			<h3>
+				<?php echo $format_desc;?>
+			</h3>
+			<p><?php echo $format; ?></p>
+		</div>
+	</div>
 </div>
