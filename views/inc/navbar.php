@@ -10,7 +10,7 @@
 					<a class="nav-link" href="http://localhost/QUANTOX_App_Students/home">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="http://localhost/QUANTOX_App_Students/home/students/index">Students</a>
+					<a class="nav-link" href="http://localhost/QUANTOX_App_Students/students/index">Students</a>
 				</li>
 			</ul>
 		</div>
